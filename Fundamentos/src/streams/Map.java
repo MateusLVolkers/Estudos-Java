@@ -14,7 +14,7 @@ public class Map {
         //marcas.stream().map(marca -> marca.toUpperCase()).forEach(imprimir);
 
         UnaryOperator<String> maiuscula = String::toUpperCase;
-        UnaryOperator<String> primLetra = letras -> letras.charAt(0) + "";
+        UnaryOperator<String> primLetra = letras -> letras.charAt(0) + "  ";
         marcas.stream()
                 .map(maiuscula)
                 .map(primLetra)
